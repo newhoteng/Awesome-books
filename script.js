@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -63,7 +64,6 @@ class ui {
   }
 }
 
-
 document.addEventListener('DOMContentLoaded', ui.displaybooks);
 
 document.querySelector('#form').addEventListener('submit', (e) => {
@@ -72,7 +72,7 @@ document.querySelector('#form').addEventListener('submit', (e) => {
   const author = document.querySelector('#author').value;
 
   if (title === '' || author === '') {
-    alert('Please fill in all fields');
+    alert('Please fill in all fields'); // eslint-disable-line
   } else {
     const book = new Book(title, author);
 
