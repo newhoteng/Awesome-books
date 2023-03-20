@@ -1,7 +1,4 @@
-/* eslint-disable no-alert */
-/* eslint-disable comma-dangle */
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-use-before-define */
+
 
 class Book {
   constructor(title, author) {
@@ -95,14 +92,3 @@ document.querySelector('#book-addition').addEventListener('click', (e) => {
   );
 });
 
-// current date & time
-// const date = document.getElementById('date');
-
-// function displayDate() {
-//   const date = document.getElementById('date');
-//   date.innerHTML = Date();
-
-//   setInterval(displayDate, 1000);
-// }
-
-// displayDate(date);
