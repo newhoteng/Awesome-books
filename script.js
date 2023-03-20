@@ -2,6 +2,7 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-use-before-define */
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -80,7 +81,6 @@ document.querySelector('#form').addEventListener('submit', (e) => {
   } else {
     const book = new Book(title, author);
 
-
     ui.addbooktolist(book);
 
     store.addbook(book);
@@ -92,7 +92,7 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 document.querySelector('#book-addition').addEventListener('click', (e) => {
   ui.deletebook(e.target);
   store.removebook(
-    e.target.previousElementSibling.previousElementSibling.textContent
+    e.target.previousElementSibling.previousElementSibling.textContent,
   );
 });
 
