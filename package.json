@@ -1,4 +1,13 @@
 {
+  "name": "awesome-books",
+  "version": "1.0.0",
+  "description": "<!-- TABLE OF CONTENTS -->",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zunair and Hairett",
+  "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",

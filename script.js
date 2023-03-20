@@ -21,7 +21,6 @@ class ui {
     const div = document.createElement('div');
     div.innerHTML = `
         <p>${book.title}</p>
-        
         <p>${book.author}</p>
         <Button class="remove-btn">Remove</Button>
         <hr>
@@ -97,13 +96,13 @@ document.querySelector('#book-addition').addEventListener('click', (e) => {
 });
 
 // current date & time
-const date = document.getElementById('date');
+// const date = document.getElementById('date');
 
-function displayDate() {
-  const date = document.getElementById('date');
-  date.innerHTML = Date();
+// function displayDate() {
+//   const date = document.getElementById('date');
+//   date.innerHTML = Date();
 
-  setInterval(displayDate, 1000);
-}
+//   setInterval(displayDate, 1000);
+// }
 
-displayDate(date);
+// displayDate(date);
