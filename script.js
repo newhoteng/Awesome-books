@@ -88,6 +88,6 @@ document.querySelector('#book-addition').addEventListener('click', (e) => {
   ui.deletebook(e.target);
   store.removebook(
     e.target.previousElementSibling.previousElementSibling
-        .previousElementSibling.textContent
+      .previousElementSibling.textContent,
   );
 });
