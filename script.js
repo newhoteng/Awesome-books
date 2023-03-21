@@ -3,6 +3,7 @@ class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
+    this.id = this.title+this.author
   }
 }
 
@@ -23,13 +24,13 @@ class store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removebook(title) {
+  static removebook(idFrombutton) {
     const books = store.getbooks();
-    books.forEach((book, index) => {
-      if (book.title === title) {
-        books.splice(index, 1);
-      }
-    });
+    
+    const index = books.findIndex((book) => {
+      return book.id === idFrombutton;
+    })
+    books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
@@ -47,7 +48,7 @@ class ui {
     <p>${book.title}</p>
     <p>by</p>
     <p>${book.author}</p>
-    <Button class="remove-btn">Remove</Button>
+    <Button data-modal=${book.id} class="remove-btn">Remove</Button>
     `;
     list.appendChild(div);
   }
@@ -86,8 +87,5 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 
 document.querySelector('#book-addition').addEventListener('click', (e) => {
   ui.deletebook(e.target);
-  store.removebook(
-    e.target.previousElementSibling.previousElementSibling
-      .previousElementSibling.textContent,
-  );
+  store.removebook(e.target.getAttribute('data-modal'));
 });
