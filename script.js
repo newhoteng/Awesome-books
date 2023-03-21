@@ -3,7 +3,7 @@ class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.id = this.title+this.author
+    this.id = this.title + this.author;
   }
 }
 
@@ -26,10 +26,8 @@ class store {
 
   static removebook(idFrombutton) {
     const books = store.getbooks();
-    
-    const index = books.findIndex((book) => {
-      return book.id === idFrombutton;
-    })
+
+    const index = books.findIndex((book) => book.id === idFrombutton);
     books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
   }
