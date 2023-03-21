@@ -3,6 +3,7 @@ class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
+    this.id = this.title + this.author;
   }
 }
 
@@ -23,13 +24,11 @@ class store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removebook(title) {
+  static removebook(idFrombutton) {
     const books = store.getbooks();
-    books.forEach((book, index) => {
-      if (book.title === title) {
-        books.splice(index, 1);
-      }
-    });
+
+    const index = books.findIndex((book) => book.id === idFrombutton);
+    books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
@@ -44,11 +43,11 @@ class ui {
     const list = document.querySelector('#book-addition');
     const div = document.createElement('div');
     div.innerHTML = `
-        <p>${book.title}</p>
-        <p>${book.author}</p>
-        <Button class="remove-btn">Remove</Button>
-        <hr>
-        `;
+    <p>${book.title}</p>
+    <p>by</p>
+    <p>${book.author}</p>
+    <Button data-modal=${book.id} class="remove-btn">Remove</Button>
+    `;
     list.appendChild(div);
   }
 
@@ -86,7 +85,5 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 
 document.querySelector('#book-addition').addEventListener('click', (e) => {
   ui.deletebook(e.target);
-  store.removebook(
-    e.target.previousElementSibling.previousElementSibling.textContent,
-  );
+  store.removebook(e.target.getAttribute('data-modal'));
 });
