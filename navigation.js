@@ -1,8 +1,6 @@
 const pageOne = document.querySelector('.book-list');
 const pageTwo = document.querySelector('.add-books');
 const pageThree = document.querySelector('.contact');
-const navbar = document.getElementById('navbar')
-console.log(navbar)
 
 const listLink = document.querySelector('.list-page');
 const addLink = document.querySelector('.add-page');

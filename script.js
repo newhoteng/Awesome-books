@@ -88,14 +88,14 @@ document.querySelector('#book-addition').addEventListener('click', (e) => {
   store.removebook(e.target.getAttribute('data-modal'));
 });
 
- // current date & time
- const date = document.getElementById('date');
-  
- function displayDate() {
-   const date = document.getElementById('date');
-   date.innerHTML = Date();
- 
-   setInterval(displayDate, 1000);
- }
- 
- displayDate(date);
+// current date & time
+const date = document.getElementById('date');
+
+function displayDate() {
+  const date = document.getElementById('date');
+  date.innerHTML = Date();
+
+  setInterval(displayDate, 1000);
+}
+
+displayDate(date);
