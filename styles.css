@@ -19,10 +19,17 @@
 h1 {
   font-size: 40px;
   text-align: center;
-  margin-bottom: 2rem;
   color: #323246;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
+}
+
+section.visible {
+  display: flex;
+}
+
+section.invisible {
+  display: none;
 }
 
 .navbar {
@@ -96,13 +103,12 @@ h1 {
 #book-addition {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   position: relative;
   border: 2px solid black;
 }
 
 #book-addition div {
-  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -139,9 +145,7 @@ button:hover {
 }
 
 .add-books {
-  position: relative;
-  top: 5rem;
-  display: block;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
@@ -238,7 +242,7 @@ button:hover {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 15px 5%;
@@ -247,6 +251,7 @@ button:hover {
   justify-content: space-between;
   border-top: #000 2px solid;
   color: #000;
+  background-color: white;
   margin-top: 10rem;
 }
 

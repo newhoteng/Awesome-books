@@ -8,22 +8,63 @@
     <title>Add Books javascript Project</title>
   </head>
   <body>
-    
-    <div class="container">
-      <div class="book-list">
-        <h1>All awesome books</h1>
-        <div id="book-addition"></div>
+
+    <nav id="navbar" class="navbar">
+      <div class="nav-first">
+        <p>Awesome Books</p>
+        <p><a class="list-page" href="#">List</a></p>
+      </div>
+      <div class="nav-second">
+        <p><a class="add-page" href="#">Add New</a></p>
+      </div>
+      <div class="nav-second">
+        <p><a class="contact-page" href="#">Contact</a></p>
+      </div>
+    </nav>
+
+    <div class="container-time">
+      <div>
+        <p id="date" class="date">Time</p>
       </div>
     </div>
+    
     <div class="container">
-      <div class="add-books">
+      <section class="book-list">
+        <h1>All awesome books</h1>
+        <div id="book-addition"></div>
+      </section>
+    </div>
+    
+    <div class="container">
+      <section class="add-books">
         <h1>Add a new Book</h1>
         <form id="form" method="post" action="submit">
           <input type="text" name="title" id="title" placeholder="Title"/><br/><br/>
           <input type="text" name="author" id="author" placeholder="Author"/><br/><br/>
           <button id="form-btn" type="submit">Add</button>
         </form>
-      </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="contact">
+        <h1>Contact us</h1>
+        <div class="contact-text">
+          <h2>
+            If you have any questions please contact us. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Dolorem, dignissimos. Porro dolor
+            ipsam ratione tempore iste, enim culpa laudantium nihil quia quidem!
+            Quia harum, fuga deleniti esse neque mollitia alias?
+          </h2>
+          <br />
+          <h3>You can reach us on:</h3>
+          <ul>
+            <li>Our email: <a href="#">mail@mail.com</a></li>
+            <li>Our twitter: <a href="#">@awesomeBooks</a></li>
+            <li>Our github: <a href="#">@awesomeBooks</a></li>
+          </ul>
+        </div>
+      </section>
     </div>
     
 
@@ -32,5 +73,6 @@
     </footer>
 
    <script src="script.js"></script>
+   <script src="navigation.js"></script>
   </body>
 </html>
