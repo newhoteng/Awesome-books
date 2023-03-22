@@ -24,6 +24,14 @@ h1 {
   font-weight: 800;
 }
 
+section.visible {
+  display: flex;
+}
+
+section.invisible {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -95,13 +103,12 @@ h1 {
 #book-addition {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   position: relative;
   border: 2px solid black;
 }
 
 #book-addition div {
-  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -244,6 +251,7 @@ button:hover {
   justify-content: space-between;
   border-top: #000 2px solid;
   color: #000;
+  background-color: white;
   margin-top: 10rem;
 }
 

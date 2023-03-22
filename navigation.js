@@ -7,19 +7,19 @@ const addLink = document.querySelector('.add-page');
 const contactLink = document.querySelector('.contact-page');
 
 listLink.addEventListener('click', () => {
-  pageOne.style.display = 'flex';
-  pageTwo.style.display = 'none';
-  pageThree.style.display = 'none';
+  pageOne.classList.remove('invisible');
+  pageTwo.classList.remove('visible');
+  pageThree.classList.remove('visible');
 });
 
 addLink.addEventListener('click', () => {
-  pageOne.style.display = 'none';
-  pageTwo.style.display = 'flex';
-  pageThree.style.display = 'none';
+  pageOne.classList.add('invisible');
+  pageTwo.classList.add('visible');
+  pageThree.classList.remove('visible');
 });
 
 contactLink.addEventListener('click', () => {
-  pageOne.style.display = 'none';
-  pageTwo.style.display = 'none';
-  pageThree.style.display = 'flex';
+  pageOne.classList.add('invisible');
+  pageTwo.classList.remove('visible');
+  pageThree.classList.add('visible');
 });
