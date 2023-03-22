@@ -2,21 +2,21 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#open_book-awesome-books)
-  - [🛠️ Built With](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#hammer_and_wrench-build-with)
+- [📖 About the Project](https://github.com/newhoteng/Awesome-books/blob/main/README.md#open_book-awesome-books)
+  - [🛠️ Built With](https://github.com/newhoteng/Awesome-books/blob/main/README.md#hammer_and_wrench-build-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#rocket-live-demo)
-- [💻 Getting Started](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#computer-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-- [👥 Authors](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#busts_in_silhouette-authors)
-- [🔭 Future Features](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#telescope-future-features)
-- [🤝 Contributing](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#handshake-contributing)
-- [⭐ Show your support](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#star-show-your-support)
-- [🙏 Acknowledgements](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#pray-acknowledgements)
-- [📝 License](https://github.com/newhoteng/Awesome-books/edit/awesome-books/README.md#memo-license)
+  - [🚀 Live Demo](https://github.com/newhoteng/Awesome-books/blob/main/README.md#rocket-live-demo)
+- [💻 Getting Started](https://github.com/newhoteng/Awesome-books/blob/main/README.md#computer-getting-started)
+  - Prerequisites
+  - Setup
+  - Install
+- [👥 Authors](https://github.com/newhoteng/Awesome-books/blob/main/README.md#busts_in_silhouette-authors)
+- [🔭 Future Features](https://github.com/newhoteng/Awesome-books/blob/main/README.md#telescope-future-features)
+- [🤝 Contributing](https://github.com/newhoteng/Awesome-books/blob/main/README.md#handshake-contributing)
+- [⭐ Show your support](https://github.com/newhoteng/Awesome-books/blob/main/README.md#star-show-your-support)
+- [🙏 Acknowledgements](https://github.com/newhoteng/Awesome-books/blob/main/README.md#pray-acknowledgements)
+- [📝 License](https://github.com/newhoteng/Awesome-books/blob/main/README.md#memo-license)
 
 #  :open_book: Awesome books
 **Awesome books** is a simple website that displays a list of books and allows you to add and remove books from that list
